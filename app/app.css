@@ -12,4 +12,31 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  background-color: rgb(31, 62, 109);
+}
+
+/*HERO section + CTA buttons*/
+.ctaBtn
+{
+  background-color: rgb(244, 188, 67);
+  display: inline-block;
+  @apply rounded-lg p-3 font-bold uppercase text-gray-800;
+}
+
+.ctaBtn:hover
+{
+  cursor: pointer;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+/*Intro section*/
+.intro-card
+{
+  color: black;
+  background-color: rgb(244, 188, 67);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
