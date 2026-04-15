@@ -4,7 +4,7 @@ import { GoToForm } from '~/lib/utils';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-[2rem] h-[100vh]">
+    <div className="flex flex-col justify-center items-center gap-[2rem] min-h-[100dvh]">
         <h1 className="text-center text-[3rem] font-bold">Csökkentse rezsijét korszerű hűtő-fűtő klímával</h1>
         <div className="w-[80%]">
             <p className="text-justify text-[1.2rem] font-bold">A modern klíma nemcsak nyári hűtésre jó, hanem átmeneti időszakban és sok esetben télen is gazdaságos fűtési megoldást jelenthet. A Premepnél olyan klímamegoldásokat kínálunk, amelyekkel otthona kényelmesebb, energiahatékonyabb és fenntarthatóbban üzemeltethető. Kérjen tájékoztatást, és ismerje meg az elérhető lehetőségeket.</p>
