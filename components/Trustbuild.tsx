@@ -11,7 +11,7 @@ const TrustBuild = () => {
                     <li>korrekt tájékoztatás</li>
                     <li>egyszerű jelentkezés</li>
                     <li>gyors kapcsolatfelvétel</li>
-                    <li>gyakorlati, valóban használható megoldások keresése</li>
+                    <li>gyakorlati, valóban használható megoldáok keresése</li>
                 </ul>
                 <hr className="w-full text-black my-[1rem]"/>
                 <p className="text-[1.75rem] font-bold">Nem bonyolítjuk túl.</p>
