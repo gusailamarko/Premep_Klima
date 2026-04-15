@@ -13,13 +13,14 @@ body {
     color-scheme: dark;
   }
 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   background-color: rgb(31, 62, 109);
 }
 
 /*HERO section + CTA buttons*/
 .ctaBtn
 {
-  background-color: rgb(244, 188, 67);
   display: inline-block;
   @apply rounded-lg p-3 font-bold uppercase text-gray-800;
 }
@@ -39,4 +40,92 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   padding: 1.5rem;
+}
+
+/*Pros section*/
+.proCard
+{
+  color: black;
+  background-color: rgb(244, 188, 67);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 1rem;
+  min-height: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.proCard.visible
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes floatFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*Offer section*/
+.offerCard
+{
+  color: black;
+  background-color: rgb(244, 188, 67);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/*Process section*/
+.processCard
+{
+  color: black;
+  background-color: rgb(244, 188, 67);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/*TrustBuild section*/
+.goalCard
+{
+  color: black;
+  background-color: rgb(244, 188, 67);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/*FAQ section*/
+.prevBtn
+{
+  cursor: pointer;
+}
+
+.nextBtn
+{
+  cursor: pointer;
+}
+
+.QandACard
+{
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 70vw;
 }
