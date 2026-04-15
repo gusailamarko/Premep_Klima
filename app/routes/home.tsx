@@ -1,5 +1,5 @@
 import { OfferTexts } from '~/constants/texts';
-import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq} from '../../components/index';
+import {Hero, Intro, Pros, Offer, Process, Faq} from '../../components/index';
 
 const home = () => {
   return (
@@ -9,7 +9,6 @@ const home = () => {
       <Pros />
       <Offer title={OfferTexts.title} subtitle={OfferTexts.subtitle} listTitle={OfferTexts.listTitle} listItems={OfferTexts.listItems} finalWord={OfferTexts.finalWord} />
       <Process />
-      <TrustBuild />
       <Faq />
     </main>
   )
