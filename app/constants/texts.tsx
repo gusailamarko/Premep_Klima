@@ -1,5 +1,3 @@
-export const CTAButtonsText = ["Kérek tájékoztatást", "Kérek visszahívást"];
-
 export const IntroTexts = {
     title: "Miért érdemes hűtő-fűtő klímában gondolkodni?",
     desc: "A megfelelő klímaberendezés ma már nem csak kényelmi eszköz. Egy korszerű hűtő-fűtő rendszer segíthet abban, hogy otthona energiafelhasználása tudatosabbá és kedvezőbbé váljon.",
@@ -56,4 +54,35 @@ export const FaQs = [
         question: "Hogyan lehet pontosabb tájékoztatást kapni?",
         answer: "Az űrlap kitöltése után munkatársunk az Ön által megadott adatok alapján tud részletesebben segíteni."
     }
+]
+
+export const Reviews = [
+    {
+        name: "Györgyi",
+        review: "A kollégák udvariasan, gyorsan és nagy szakmai precizitással végezték a munkájukat."
+    },
+    {
+        name: "Csaba",
+        review: "A csapat szakmai felkészültsége kifogástalan volt. Munkájuk után rendet és tisztaságot hagytak, végig kedvesek és rugalmasak maradtak. A jövőbeli kialakításokat illetően értékes szakmai tanácsokkal is segítették a terveimet, és minden kérésemet maradéktalanul tiszteletben tartották. Hozzáállásuk profi és teljes mértékben megfelelt az elvárásaimnak."
+    },
+    {
+        name: "Zsuzsanna",
+        review: "Teljes mértékben elégedett vagyok a munkájukkal. Precízen, gyorsan és tisztán dolgoztak, az adminisztráció is gördülékenyen zajlott, a klíma pedig azóta is hibátlanul működik."
+    },
+    {
+        name: "Viktor",
+        review: "Minden tekintetben elégedett voltam a munkájukkal. A folyamat zökkenőmentesen zajlott, a kollégák segítőkészek és alaposak voltak, valamint tiszta munkaterületet hagytak maguk után."
+    },
+    {
+        name: "Flórián",
+        review: "Elégedettek voltunk a munkával. A kolléga udvarias volt, gyorsan dolgozott, és figyelembe vette a kéréseinket."
+    },
+    {
+        name: "Csaba",
+        review: "Teljes mértékben elégedettek vagyunk, minden a megbeszéltek szerint, rendben zajlott."
+    },
+    {
+        name: "Ádám",
+        review: "Az eszköz kifogástalanul működik, teljes mértékben elégedett vagyok vele. A kolléga segítőkész és korrekt volt."
+    },
 ]

@@ -1,9 +1,9 @@
 import { OfferTexts } from '~/constants/texts';
-import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq} from '../../components/index';
+import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq, CTASection} from '../../components/index';
 
 const home = () => {
   return (
-    <main className='flex flex-col items-center gap-y-[5rem]'>
+    <main className='flex flex-col items-center'>
       <Hero />
       <Intro />
       <Pros />
@@ -11,6 +11,7 @@ const home = () => {
       <Process />
       <TrustBuild />
       <Faq />
+      <CTASection />
     </main>
   )
 }

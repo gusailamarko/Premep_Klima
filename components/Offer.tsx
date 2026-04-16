@@ -4,8 +4,8 @@ import { GoToForm } from "~/lib/utils"
 const Offer = ({ title, subtitle, listTitle, listItems, finalWord }:OfferProps) => {
   return (
     <>
-    <h2 className="text-center text-[2.5rem] font-bold">Ajánlatunk:</h2>
-    <div className="flex flex-col md:flex-row justify-evenly items-center w-[90%] gap-y-[3rem]">
+    <h2 className="text-center text-[2.5rem] font-bold mt-[4rem] mb-[2rem]">Ajánlatunk:</h2>
+    <div className="flex flex-col md:flex-row justify-evenly items-center w-[90%] gap-y-[2rem]">
         <div className="offerCard flex flex-col justify-center items-center w-full md:w-[40%] gap-y-[1rem]">
             <div>
                 <h3 className="text-center text-[1.5rem] font-bold mb-3">{title}</h3>

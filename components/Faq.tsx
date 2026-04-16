@@ -39,7 +39,7 @@ const Faq = () => {
   }
 
   return (
-    <div className="flex flex-col items-center w-[90%]">
+    <div className="flex flex-col items-center w-[90%] mt-[4rem]">
         <h2 className="text-center text-[2.5rem] font-bold">GYIK</h2>
         <p className="text-center text-[1.5rem] font-bold italic mb-[2rem]">Gyakran ismételt kérdések</p>
         <div className="flex justify-center items-center gap-x-[1rem]">

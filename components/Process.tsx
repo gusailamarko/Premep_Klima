@@ -2,7 +2,7 @@ import { Processes } from "~/constants/texts"
 
 const Process = () => {
   return (
-    <div className="text-center text-[2.5rem] font-bold flex flex-col justify-center w-[90%] gap-[2rem]">
+    <div className="text-center text-[2.5rem] font-bold flex flex-col justify-center w-[90%] mt-[4rem] gap-[2rem]">
         <h2>Így indul a folyamat:</h2>
         {Object.values(Processes).map((process, idx) => (
             <div key={idx} className="processCard">

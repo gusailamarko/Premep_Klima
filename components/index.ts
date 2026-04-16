@@ -6,3 +6,6 @@ export {default as Offer} from './Offer';
 export {default as Process} from './Process';
 export {default as TrustBuild} from './TrustBuild';
 export {default as Faq} from './Faq';
+export {default as CTASection} from './CTASection';
+export {default as Form} from './Form';
+export {default as Alert} from './Alert';
