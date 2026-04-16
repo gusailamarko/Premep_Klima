@@ -315,3 +315,9 @@ body {
   padding: 1rem;
   cursor: pointer;
 }
+
+/*FOOTER SECTION*/
+.footer
+{
+  background-color: rgb(32,36,37);
+}
