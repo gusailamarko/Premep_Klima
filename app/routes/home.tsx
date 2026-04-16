@@ -1,5 +1,5 @@
 import { OfferTexts } from '~/constants/texts';
-import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq, CTASection} from '../../components/index';
+import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq, CTASection, Footer} from '../../components/index';
 import { useEffect } from 'react';
 import { setMetaTag } from '~/lib/utils';
 
@@ -18,6 +18,7 @@ const home = () => {
       <TrustBuild />
       <Faq />
       <CTASection />
+      <Footer />
     </main>
   )
 }

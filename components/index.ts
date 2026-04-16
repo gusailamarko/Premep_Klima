@@ -9,3 +9,4 @@ export {default as Faq} from './Faq';
 export {default as CTASection} from './CTASection';
 export {default as Form} from './Form';
 export {default as Alert} from './Alert';
+export {default as Footer} from './Footer';
