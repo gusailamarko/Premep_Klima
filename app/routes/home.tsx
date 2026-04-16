@@ -1,7 +1,13 @@
 import { OfferTexts } from '~/constants/texts';
 import {Hero, Intro, Pros, Offer, Process, TrustBuild, Faq, CTASection} from '../../components/index';
+import { useEffect } from 'react';
+import { setMetaTag } from '~/lib/utils';
 
 const home = () => {
+  useEffect(() => {
+      setMetaTag("PREMEP - Klíma", "Csökkentse rezsijét modern hűtő-fűtő klímával!", "/icons/premep_icon.jpg");
+    }, []);
+
   return (
     <main className='flex flex-col items-center'>
       <Hero />

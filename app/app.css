@@ -19,6 +19,29 @@ body {
   color: white;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar 
+{
+  width: 5px;
+  height: 5px;
+}
+  
+::-webkit-scrollbar-track 
+{
+  background: #2c2c2c; 
+}
+   
+
+::-webkit-scrollbar-thumb 
+{
+  background: rgb(244, 188, 67); 
+}
+  
+::-webkit-scrollbar-thumb:hover 
+{
+  background: rgb(244, 188, 67); 
+}
+
 /*HERO section + CTA buttons*/
 .logo
 {
