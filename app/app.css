@@ -319,5 +319,6 @@ body {
 /*FOOTER SECTION*/
 .footer
 {
+  width: 100%;
   background-color: rgb(32,36,37);
 }

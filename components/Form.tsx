@@ -49,7 +49,7 @@ const Form = () => {
 
   return (
     <>
-        <div className="form-container w-[90%] md:w-[50%]">
+        <div className="form-container w-[90%] md:w-[50%] mb-[4rem]">
             <form ref={form} id="form" className="form text-center w-full md:w-[50%] md:w-full p-[1rem] rounded">
                 <div>
                     <label htmlFor="nev">Név:</label>
