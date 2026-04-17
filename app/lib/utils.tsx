@@ -2,7 +2,7 @@ import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export const GoToForm = () => {
-  const formElement = document.getElementById('form');
+  const formElement = document.getElementById('action');
   formElement?.scrollIntoView({ behavior: 'smooth' });
 }
 

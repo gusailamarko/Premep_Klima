@@ -68,7 +68,7 @@ const Form = () => {
                     <input type="text" name="telepules" id="telepules" required/>
                 </div>
                 <div>
-                    <label htmlFor="meret">Hány m<sup>2</sup> az ingatlan?</label>
+                    <label htmlFor="meret">Hány m<sup>2</sup> a családiház alapterülete?</label>
                     <input type="number" name="meret" id="meret" required/>
                 </div>
                 <div>

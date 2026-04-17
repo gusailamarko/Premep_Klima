@@ -53,36 +53,36 @@ export const FaQs = [
     {
         question: "Hogyan lehet pontosabb tájékoztatást kapni?",
         answer: "Az űrlap kitöltése után munkatársunk az Ön által megadott adatok alapján tud részletesebben segíteni."
+    },
+    {
+        question: "Milyen típusú ingatlanok esetében vehető igénybe a klíma program?",
+        answer: "A klíma program kertesházak esetében vehető igénybe, amennyiben az ingatlan a tulajdoni lapon lakóingatlan besorolással szerepel."
     }
 ]
 
 export const Reviews = [
     {
-        name: "Györgyi",
+        name: "Györgyi (Székesheférvár)",
         review: "A kollégák udvariasan, gyorsan és nagy szakmai precizitással végezték a munkájukat."
     },
     {
-        name: "Csaba",
-        review: "A csapat szakmai felkészültsége kifogástalan volt. Munkájuk után rendet és tisztaságot hagytak, végig kedvesek és rugalmasak maradtak. A jövőbeli kialakításokat illetően értékes szakmai tanácsokkal is segítették a terveimet, és minden kérésemet maradéktalanul tiszteletben tartották. Hozzáállásuk profi és teljes mértékben megfelelt az elvárásaimnak."
-    },
-    {
-        name: "Zsuzsanna",
+        name: "Zsuzsanna (Őrtilos)",
         review: "Teljes mértékben elégedett vagyok a munkájukkal. Precízen, gyorsan és tisztán dolgoztak, az adminisztráció is gördülékenyen zajlott, a klíma pedig azóta is hibátlanul működik."
     },
     {
-        name: "Viktor",
+        name: "Viktor (Tomor)",
         review: "Minden tekintetben elégedett voltam a munkájukkal. A folyamat zökkenőmentesen zajlott, a kollégák segítőkészek és alaposak voltak, valamint tiszta munkaterületet hagytak maguk után."
     },
     {
-        name: "Flórián",
+        name: "Flórián (Etyek)",
         review: "Elégedettek voltunk a munkával. A kolléga udvarias volt, gyorsan dolgozott, és figyelembe vette a kéréseinket."
     },
     {
-        name: "Csaba",
+        name: "Csaba (Celldömölk)",
         review: "Teljes mértékben elégedettek vagyunk, minden a megbeszéltek szerint, rendben zajlott."
     },
     {
-        name: "Ádám",
+        name: "Ádám (Kartal)",
         review: "Az eszköz kifogástalanul működik, teljes mértékben elégedett vagyok vele. A kolléga segítőkész és korrekt volt."
     },
 ]
