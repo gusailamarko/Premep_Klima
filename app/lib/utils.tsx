@@ -6,6 +6,11 @@ export const GoToForm = () => {
   formElement?.scrollIntoView({ behavior: 'smooth' });
 }
 
+export const GoToHEMQuestion = () => {
+  const formElement = document.getElementById('FAQs');
+  formElement?.scrollIntoView({ behavior: 'smooth' });
+}
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }

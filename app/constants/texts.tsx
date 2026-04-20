@@ -35,6 +35,24 @@ export const Processes = {
 
 export const FaQs = [
     {
+        question: "Mit jelent a HEM (Hitelesített Energiamegtakarítás) fogalma?",
+        answer: "A Hitelesített Energia-megtakarítás (HEM) egy olyan hivatalosan igazolt energiamegtakarítás, amely akkor keletkezik, ha egy beruházás vagy változtatás után bizonyíthatóan kevesebb energiát használunk fel.",
+        answerPt2 : "Például, ha klímát vezetsz be, és emiatt csökken a fogyasztásod, ezt szakértők kiszámolják és hitelesítik. Ez az igazolt megtakarítás a HEM."
+    },
+    {
+        question: "Mit jelent a klímánál a SCOP érték, és miért fontos, hogy legalább 4,1 legyen?",
+        answer: "A SCOP (Seasonal Coefficient of Performance) azt mutatja meg, hogy egy klíma fűtéskor átlagosan mennyire hatékony egy teljes szezon alatt.",
+        listItems: [
+            {
+                main: "Ha a SCOP érték 4,1, az azt jelenti, hogy:",
+                minor: "1 kWh villamos energiából átlagosan 4,1 kWh hőenergiát állít elő."
+            },
+            {
+                main: "Minél magasabb ez a szám, annál hatékonyabban működik a berendezés, ezért kevesebb áramfelhasználás mellett is ugyanazt a fűtési teljesítményt biztosítja – ennek köszönhetően a háztartás számára jelentősen kedvezőbb rezsit eredményez."
+            }
+        ]
+    },
+    {
         question: "Milyen előnye van a hűtő-fűtő klímának?",
         answer: "Egy korszerű rendszer nemcsak a nyári hűtést oldja meg, hanem sok esetben hatékonyan használható fűtésre is, így hozzájárulhat az energiafelhasználás tudatosabb kezeléséhez."
     },

@@ -1,14 +1,33 @@
 import {CTAButtons} from './index';
-import { GoToForm } from '~/lib/utils';
+import { GoToForm, GoToHEMQuestion } from '~/lib/utils';
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center heroContent">
       <img src="/imgs/premep_logo.webp" alt="Premep Logo" className='logo w-[90%] md:w-[auto]'/>
       <div className='flex flex-col justify-start items-center gap-[1rem] w-[90%] h-full text-black'>
-        <div>
+        <div className='w-full'>
           <h1 className="text-center text-[1.8rem] md:text-[3rem] font-bold uppercase mb-[1rem]">Csökkentse rezsijét korszerű hűtő-fűtő klímával</h1>
-          <p className='dyk text-center text-[1.25rem] font-bold italic'>Tudtad-e, hogy a klímával való fűtés <span className='text-red-600 underline'>harmad</span> annyiba kerül mint gázzal való fűtés esetén? </p>
+          <p className='dyk text-center text-[1.25rem] font-bold italic'>Tudtad, hogy a klímával történő fűtés akár <span className='underline text-red-500'>harmadannyiba</span> is kerülhet, mint a hagyományos gázfűtés?</p>
+        </div>
+        <div className='w-full dyk'>
+          <div className='flex flex-col justify-center items-center gap-[1rem]'>
+            <div>
+              <h3 className='text-center text-[2rem] font-bold'>KIEMELT AJÁNLATUNK</h3>
+              <p className='text-center text-[1rem] text-gray-800 font-bold italic'>A május végéig beszerelt klímákra érvényes.</p>
+            </div>
+            <div>
+              <p className='text-center text-[1.5rem] font-bold italic'>4,1 SCOP értékű klíma, beszereléssel együtt: <span className='underline text-red-500 mr-2'>MOST 199.000 Ft</span> <span className='line-through'>249.000 Ft helyett</span></p>
+              <p className='text-center text-[1rem] text-gray-800 font-bold italic'>* Az akciót csak <span className='underline cursor-pointer' onClick={GoToHEMQuestion}>HEM</span> elszámolással lehet igénybe venni, más módon nem elérhető.</p>
+            </div>
+            <div className='flex flex-col justify-center items-center gap-[0.5rem]'>
+              <CTAButtons Action={GoToForm} text="Tájékoztatás" />
+              <div className='flex justify-center gap-[2rem]'>
+                <p className='text-[1rem] text-gray-800 font-bold italic'>+36704029398</p>
+                <p className='text-[1rem] text-gray-800 font-bold italic'>+36703655039</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center gap-[2rem]'>
           <div className='klimaPic md:w-[45%] h-[15rem] md:h-[25rem]'>

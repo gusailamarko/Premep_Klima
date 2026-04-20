@@ -39,11 +39,11 @@ const Faq = () => {
   }
 
   return (
-    <div className="flex flex-col items-center w-[90%] mt-[4rem]">
+    <div className="flex flex-col items-center w-[90%] mt-[4rem]" id="FAQs">
         <h2 className="text-center text-[2.5rem] font-bold">GYIK</h2>
         <p className="text-center text-[1.5rem] font-bold italic mb-[2rem]">Gyakran ismételt kérdések</p>
         <div className="flex justify-center items-center gap-x-[1rem]">
-            <div onClick={HandlePrev} className="prevBtn">
+            <div onClick={HandlePrev} className="prevBtn hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
@@ -53,9 +53,20 @@ const Faq = () => {
                     <h3 className="text-center text-[1.5rem] font-bold">{FaQs[currentIdx].question}</h3>
                     <hr className="w-full text-black my-[1rem]"/>
                     <p className="text-[1.2rem] font-bold italic text-gray-800">{FaQs[currentIdx].answer}</p>
+                    <br />
+                    <p className="text-[1.2rem] font-bold italic text-gray-800">{FaQs[currentIdx]?.answerPt2}</p>
+                    <ul>
+                      {FaQs[currentIdx]?.listItems?.map((item, idx) => (
+                        <li key={idx}>
+                          <p className="text-[1.2rem] font-bold italic text-gray-800">{item.main}</p>
+                          <p className="text-[1rem] font-bold italic text-gray-800">{item.minor}</p>
+                          <br />
+                        </li>
+                      ))}
+                    </ul>
                 </div>
             </div>
-            <div onClick={HandleNext} className="nextBtn">
+            <div onClick={HandleNext} className="nextBtn hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                 </svg>
