@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="text-center text-[1.8rem] md:text-[3rem] font-bold uppercase mb-[1rem]">Csökkentse rezsijét korszerű hűtő-fűtő klímával</h1>
           <p className='dyk text-center text-[1.25rem] font-bold italic'>Tudtad, hogy a klímával történő fűtés akár <span className='underline text-red-500'>harmadannyiba</span> is kerülhet, mint a hagyományos gázfűtés?</p>
         </div>
-        <div className='w-full dyk'>
+        {/*<div className='w-full dyk'>
           <div className='flex flex-col justify-center items-center gap-[1rem]'>
             <div>
               <h3 className='text-center text-[2rem] font-bold'>KIEMELT AJÁNLATUNK</h3>
@@ -28,7 +28,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
         <div className='flex flex-col md:flex-row justify-center items-center gap-[2rem]'>
           <div className='klimaPic md:w-[45%] h-[15rem] md:h-[25rem]'>
             <img src="/imgs/mdv_one_klíma.webp" alt="Kép a klímáról"/>
