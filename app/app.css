@@ -73,6 +73,7 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   aspect-ratio: 1/1;
+  position: relative;
 }
 
 .klimaPic img

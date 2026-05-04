@@ -40,7 +40,7 @@ const TrustBuild = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-    }, []);
+  }, []);
 
   return (
     <div className="flex flex-col items-center w-[90%] mt-[4rem] gap-[2rem]">

@@ -1,37 +1,61 @@
 import {CTAButtons} from './index';
-import { GoToForm, GoToHEMQuestion } from '~/lib/utils';
+import { GoToForm } from '~/lib/utils';
+import { useState } from "react"
 
 const Hero = () => {
+  const [currentImgIdx, setCurrentImgIdx] = useState(0);
+
+  const images = [
+    {src: "/imgs/mdv_one_klíma.webp", alt: "Kép a kínált klíma termékről"},
+    {src: "/imgs/Szigetelés.webp", alt: "Kép a szigetelési procedúráról"}
+  ]
+
+  const goToPrevious = () => {
+    setCurrentImgIdx((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentImgIdx((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const currentImg = images[currentImgIdx];
+
+
   return (
     <div className="flex flex-col items-center heroContent">
       <img src="/imgs/premep_logo.webp" alt="Premep Logo" className='logo w-[90%] md:w-[auto]'/>
       <div className='flex flex-col justify-start items-center gap-[1rem] w-[90%] h-full text-black'>
         <div className='w-full'>
           <h1 className="text-center text-[1.8rem] md:text-[3rem] font-bold uppercase mb-[1rem]">Csökkentse rezsijét korszerű hűtő-fűtő klímával</h1>
-          <p className='dyk text-center text-[1.25rem] font-bold italic'>Tudtad, hogy a klímával történő fűtés akár <span className='underline text-red-500'>harmadannyiba</span> is kerülhet, mint a hagyományos gázfűtés?</p>
-        </div>
-        {/*<div className='w-full dyk'>
-          <div className='flex flex-col justify-center items-center gap-[1rem]'>
-            <div>
-              <h3 className='text-center text-[2rem] font-bold'>KIEMELT AJÁNLATUNK</h3>
-              <p className='text-center text-[1rem] text-gray-800 font-bold italic'>A május végéig beszerelt klímákra érvényes.</p>
-            </div>
-            <div>
-              <p className='text-center text-[1.5rem] font-bold italic'>4,1 SCOP értékű klíma, beszereléssel együtt: <span className='underline text-red-500 mr-2'>MOST 199.000 Ft</span> <span className='line-through'>249.000 Ft helyett</span></p>
-              <p className='text-center text-[1rem] text-gray-800 font-bold italic'>* Az akciót csak <span className='underline cursor-pointer' onClick={GoToHEMQuestion}>HEM</span> elszámolással lehet igénybe venni, más módon nem elérhető.</p>
-            </div>
-            <div className='flex flex-col justify-center items-center gap-[0.5rem]'>
-              <CTAButtons Action={GoToForm} text="Tájékoztatás" />
-              <div className='flex justify-center gap-[2rem]'>
-                <p className='text-[1rem] text-gray-800 font-bold italic'>+36704029398</p>
-                <p className='text-[1rem] text-gray-800 font-bold italic'>+36703655039</p>
+          <div className='dyk'>
+            <p className='text-center text-[1.5rem] font-bold italic mb-[2rem]'>Tudtad, hogy a klímával történő fűtés akár <span className='underline text-red-500'>harmadannyiba</span> is kerülhet, mint a hagyományos gázfűtés?</p>
+            <div className='flex flex-col justify-center items-center gap-[0.5rem] text-center'>
+              <h3 className='text-[1.8rem] text-red-500 font-bold'>MÁJUSI KIEMELT AJÁNLATUNK!</h3>
+              <p className='text-[1.5rem] font-bold'>Vásároljon klímát ezen a <a href="https://premep.hu/klimak" target='_blank' className='text-blue-900 italic underline'>linken</a> és most <span className='text-red-500 font-bold italic'>AJÁNDÉK</span> padlásfödém szigetelést biztosítunk!</p>
+              <p className='text-[1.25rem] font-bold italic'>Az akció az első 50 megrendelőre érvényes, és kizárólag az alábbi vármegyékben érhető el:</p>
+              <p className='text-[1rem] text-gray-800 font-bold italic mb-[1rem]'>Somogy, Zala, Borsod-Abaúj-Zemplén, Szabolcs-Szatmár-Bereg</p>
+              <div className='flex justify-center items-center gap-[1rem] saleQuestion'>
+                <p className='text-[1.5rem] font-bold'>KÉRDÉS ESETÉN:</p>
+                <CTAButtons Action={GoToForm} text="Kérek tájékoztatást!" />
               </div>
+              <p className='text-[1.25rem] text-gray-800 font-bold italic mt-[0.5rem]'>Telefonos elérhetőségünk: +36704029398</p>
             </div>
           </div>
-        </div>*/}
+        </div>
         <div className='flex flex-col md:flex-row justify-center items-center gap-[2rem]'>
-          <div className='klimaPic md:w-[45%] h-[15rem] md:h-[25rem]'>
-            <img src="/imgs/mdv_one_klíma.webp" alt="Kép a klímáról"/>
+          <div className='klimaPic md:w-[45%] h-[20rem] md:h-[25rem]'>
+            <img src={images[currentImgIdx].src} alt={images[currentImgIdx].alt}/>     
+            <button onClick={goToPrevious} className="carousel-prevBtn text-white">←</button>
+            <button onClick={goToNext} className="carousel-nextBtn text-white">→</button>
+            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2 bg-[#1f3e6d] p-2 rounded opacity-75">
+            {images.map((_, index) => (
+                <button key={index} onClick={() => setCurrentImgIdx(index)} className={`w-3 h-3 rounded-full ${index === currentImgIdx ? "bg-[#f4bc43]" : "bg-[#1f3e6d] bg-opacity-50"}`}/>
+            ))}
+            </div>
           </div>
           <div className='md:w-[45%]'>
             <p className="text-justify text-[1rem] md:text-[1.5rem] font-bold leading-relaxed">A modern klíma nemcsak a családiház nyári hűtésére jó, hanem átmeneti időszakban és sok esetben télen is gazdaságos fűtési megoldást jelenthet. A Premepnél olyan klímamegoldásokat kínálunk, amelyekkel otthona kényelmesebb, energiahatékonyabb és fenntarthatóbban üzemeltethető. Kérjen tájékoztatást, és ismerje meg az elérhető lehetőségeket.</p>
